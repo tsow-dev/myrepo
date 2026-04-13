@@ -1,1 +1,2 @@
-Repo to submit the INST377 - Lab 6
+Repo to submit the INST377 Lab Submissions
+
