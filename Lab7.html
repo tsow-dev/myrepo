@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>INST377 - Lab 7</title>
+    <link rel="stylesheet" href="Lab7.css">
+    <script src="Lab7.js"></script>
+</head>
+<body>
+    <div id="main-box">
+        <h1>Let's Lookup some Books</h1>
+
+        <form onsubmit="searchBooks(); return false;">
+            <label for="bookName">Please enter a book name:</label>
+            <br>
+            <input type="text" id="bookName" name="bookName">
+            <input type="submit" value="Search">
+        </form>
+
+        <p id="loading-message"></p>
+
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody id="results-body"></tbody>
+        </table>
+    </div>
+</body>
+</html>
