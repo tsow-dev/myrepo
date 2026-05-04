@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Assignment 2 - Dogs</title>
+    <link rel="stylesheet" href="Assignment2-Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body onload="loadDogPage(); setupAudio();">
+
+    <h1 class="page-title">Dogs</h1>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="Assignment2-Home.html">Home</a></li>
+            <li><a href="Assignment2-Stocks.html">Stocks</a></li>
+            <li><a href="Assignment2-Dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="section-title">Doggos! 🐶</h2>
+
+    <div class="swiper dog-swiper">
+        <div class="swiper-wrapper" id="dog-images"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <h2 class="section-title">Dog Breeds</h2>
+    <div id="dog-buttons"></div>
+
+    <div id="dog-info"></div>
+
+    <div class="audio-box">
+        <h2>Audio Instructions</h2>
+        <p>Use your microphone to control the website.</p>
+
+        <ul>
+            <li>Say: Hello</li>
+            <li>Say: Change the color to &lt;color&gt;</li>
+            <li>Say: Navigate to &lt;page&gt;</li>
+            <li>Say: Load Dog Breed &lt;dog breed name&gt;</li>
+        </ul>
+
+        <button onclick="turnOnAudio()">Turn On Audio</button>
+        <button onclick="turnOffAudio()">Turn Off Audio</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Assignment2-Script.js"></script>
+</body>
+</html>

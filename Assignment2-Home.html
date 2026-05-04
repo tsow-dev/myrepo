@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Assignment 2 - Home</title>
+    <link rel="stylesheet" href="Assignment2-Style.css">
+</head>
+
+<body onload="loadHomePage(); setupAudio();">
+
+    <h1 class="page-title">Assignment 2</h1>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="Assignment2-Home.html">Home</a></li>
+            <li><a href="Assignment2-Stocks.html">Stocks</a></li>
+            <li><a href="Assignment2-Dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <div class="home-button-box">
+        <button class="main-button" onclick="window.location.href='Assignment2-Stocks.html'">Stocks</button>
+        <button class="main-button" onclick="window.location.href='Assignment2-Dogs.html'">Dogs</button>
+    </div>
+
+    <div class="quote-box">
+        <h2>Quote of the Day</h2>
+        <p id="quote">Loading quote...</p>
+        <p id="quote-author"></p>
+    </div>
+
+    <div class="audio-box center-audio">
+        <h2>Audio Instructions</h2>
+        <p>Use your microphone to control the website.</p>
+
+        <ul>
+            <li>Say: Hello</li>
+            <li>Say: Change the color to &lt;color&gt;</li>
+            <li>Say: Navigate to &lt;page&gt;</li>
+        </ul>
+
+        <button onclick="turnOnAudio()">Turn On Audio</button>
+        <button onclick="turnOffAudio()">Turn Off Audio</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="Assignment2-Script.js"></script>
+</body>
+</html>
